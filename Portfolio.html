@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<style>
+    .navbar-nav .nav-item.active .nav-link,
+        .navbar-nav .nav-item:hover .nav-link {
+         color: skyblue;
+           }
+           .Up{
+            display: flex;
+            justify-content: end;
+            padding: 5px;
+            margin: 10px;
+        }
+        .fa{
+      width: 35px;
+      margin-right: 4px;
+      padding: 10px;
+      /* font-size: 20px; */
+      border-radius: 5px;
+        }
+    .P1{
+    top: 230px;
+    left: 80px;
+  }
+  .P2{
+    opacity: 0.25;
+  }
+  .N1{
+    font-weight: bold;
+  }
+  .N1:hover::after{
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+        .N1::after{
+                content: '';
+                position: absolute;
+                width: 100%;
+                transform: scaleX(0);
+                height: 3px;
+                bottom: 0;
+                left: 0;
+                background-color: skyblue;
+                transform-origin: bottom left;
+                transition: transform 0.35s ease-out;
+        }
+        .HH{
+            color: black;
+          }
+          .HH:hover{
+            color: blue;
+            font-weight: bold;
+            
+          }
+</style>
+</head>
+<body>
+    <!-- Navigation bar -->
+
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container p-2 ">
+              <a class="navbar-brand text-dark" href="#"><h2 style="font-weight: bold;">Bizland<font class="text-primary">.</font></h2> </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item  dropdown N1">
+                    <a class="nav-link active N1" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item dropdown ">
+                    <a class="nav-link active N1" href="#About">About</a>
+                  </li>
+                  <li class="nav-item dropdown N1">
+                    <a class="nav-link active" href="#Services">Service</a>
+                  </li>
+                  <li class="nav-item dropdown N1">
+                    <a class="nav-link active" href="#Portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item dropdown  N1">
+                    <a class="nav-link active" href="#Team">Team</a>
+                  </li>
+                  <li class="nav-item dropdown  N1">
+                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown link
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="dropdown-item nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Another action
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Nested Dropdown</a></li>
+                        <li><a class="dropdown-item" href="#">Nested Dropdown 1</a></li>
+                        </ul>
+                    </li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item  dropdown N1">
+                    <a class="nav-link active" href="#Contact">contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          
+        </nav>
+      </div>
+    </div><br><br><br><br>
+    <div class="container-fluid" style="background-color: #e7f5ff;">
+    <div class="container p-3">
+      <div class="row">
+        <div class="col-lg-6 col-12">Portfolio Details</div>
+        <div class="col-lg-6 col-12 justify-content-end d-flex">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item "><a class="text-decoration-none" href="Project.html">Home</a></li>
+              <li class="breadcrumb-item "><a class="text-decoration-none"  href="#">Portfolio</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Portfolio Details</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+    </div><br><br>
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-8 col-12">
+          <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img src="portfolio-details-1.jpg" class="d-block w-100" alt="...">
+                
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="portfolio-details-2.jpg" class="d-block w-100" alt="...">
+                
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="portfolio-details-3.jpg" class="d-block w-100" alt="...">
+                
+              </div>
+            </div>
+            
+          </div>
+          
+         
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="card shadow p-3" >
+            <div class="card-header bg-white">
+              <p style="font-size: 22px; font-weight: bold; opacity:0.9 ;">Project Information</p>
+            </div>
+            <div class="p-3">
+            <p>
+                <font style="font-size: 16px; font-weight: bold; opacity: 0.9;">Category:</font> Web Design
+            </p>
+            <p> <font style="font-size: 16px; font-weight: bold; opacity: 0.9;">Client:</font> ASU Company</p>
+            <p><font style="font-size: 16px; font-weight: bold; opacity: 0.9;">Project date: </font>01 March, 2020</p>
+            <p><font style="font-size: 16px; font-weight: bold; opacity: 0.9;">Project URL: </font><a class="text-decoration-none" href="#">www.example.com</a></p>
+          </div></div>
+          <br>
+          <p style="font-size: 26px; font-weight: bold; opacity: 0.9;">This is an example of portfolio detail</p>
+          <p>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.</p>
+        </div>
+      </div>
+    </div>
+
+    <br><br><br>
+<!-- Join our Newsletter -->
+        <div class="container-fluid text-center" style="background-color:#e7f5ff">
+          <br><br>
+        <h3 class="mb-4">Join Our Newsletter</h3>
+        <p class="mb-4">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+       <center><div class="input-group w-50">
+          <input type="text" class="form-control">
+          <div class="input-group-append">
+            <button class="btn btn-outline-secondary bg-primary text-white p-2" type="button" style="width: 120px;">Subscribe</button>
+          </div>
+        </div></center> <br><br>
+        </div>
+
+<br><br>
+<!-- Footer -->
+        <div class="container">
+          <div class="row gy-2">
+            <div class="col-lg-3 col-12">
+              <h3 style="opacity: 0.9; font-weight: bold;" class="mb-3">BizLand<font class="text-primary">.</font></h3>
+              
+              <p style="width: 60%; font-size: 14px; opacity: 0.8;">A108 Adam Street
+                New York, NY 535022
+                United States</p>
+              <p style="opacity: 0.7;"><font style="font-weight: bold;">Phone:</font> +1 5589 55488 55</p>
+              <p style="opacity: 0.7;"><font style="font-weight: bold;">Email:</font> info@example.com</p>
+            </div>
+            <div class="col-lg-3 col-12">
+              <p style="font-weight: bold; font-size: 17px; opacity: 0.9;">Useful Links</p>
+              <ul class="list-unstyled mb-5" style="opacity: 0.8;">
+                <li class="mb-3"><a href="#" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                  <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                </svg> <font class="HH">Home</font></a></li>
+                <li class="mb-3"><a href="#" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                  <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                </svg> <font class="HH">About us</font></a></li>
+                <li class="mb-3"><a href="#" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                  <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                </svg> <font class="HH">Services</font></a></li>
+                <li class="mb-3"><a href="#" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                  <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                </svg> <font class="HH">Terms of service</font></a></li>
+                <li class="mb-3"><a href="#" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                  <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                </svg> <font class="HH">Privacy policy</font></a></li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-12">
+              <p style="font-weight: bold; font-size: 17px; opacity: 0.9;">Our Services</p>
+              <ol class="list-unstyled" style="opacity: 0.8;">
+                <li class="mb-3"><a href="#" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                  <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                </svg> <font class="HH">Web Design</font></a></li>
+                <li class="mb-3"><a href="#" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                  <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                </svg> <font class="HH">Web Development</font></a></li>
+                <li class="mb-3"><a href="#" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                  <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                </svg> <font class="HH">Product Management</font></a></li>
+                <li class="mb-3"><a href="#" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                  <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                </svg> <font class="HH">Marketing</font></a></li>
+                <li class="mb-3"><a href="#" style="text-decoration: none;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-right" viewBox="0 0 16 16">
+                  <path d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/>
+                </svg> <font class="HH">Graphic Design</font></a></li>
+              </ol>
+            </div>
+            <div class="col-lg-3 col-12">
+              <p style="font-weight: bold; font-size: 17px; opacity: 0.9;">Our Social Networks</p>
+              <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
+              <div>
+                <a href="#" class="fa fa-twitter  text-decoration-none bg-primary text-white"></a>  
+                  <a href="#" class="fa fa-facebook  text-decoration-none bg-primary text-white"></a>
+                  <a href="#" class="fa fa-instagram  text-decoration-none bg-primary text-white"></a> 
+                  <a href="#" class="fa fa-skype  text-decoration-none  bg-primary text-white"></a>
+                  <a href="#" class="fa fa-linkedin  text-decoration-none  bg-primary text-white"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+<br><br>
+<!-- Copyright -->
+          <div class="container-fluid" style="background-color:#f5fbff;">
+            <br>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-12 " style="font-size: 15px;"><svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="currentColor" class="bi bi-c-circle" viewBox="0 0 16 16">
+                <path d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512Z"/>
+              </svg> Copyright <font class="text-dark fw-bold">BizLand</font>. All Rights Reserved</div>
+              <div class="col-lg-6 col-12 d-flex justify-content-end">Designed by<font class="text-primary">  BootstrapMade</font></div>
+            </div>
+          </div><br>
+
+<!-- Arrow on right end -->
+          <div class="Up text-primary fixed-bottom"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="56" height="36" fill="currentColor" class="bi bi-file-arrow-up-fill" viewBox="0 0 16 16">
+            <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM7.5 6.707 6.354 7.854a.5.5 0 1 1-.708-.708l2-2a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 6.707V10.5a.5.5 0 0 1-1 0V6.707z"/>
+          </svg></a></div>  
+          </div>
+
+
+</body>
+</html>
